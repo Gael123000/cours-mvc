@@ -100,7 +100,7 @@ class PersonnageRepository
         ");
 
         $stmt->execute([
-            ':name' => $character->nom,
+            ':name' => $character->getNom(),
             ':PV' => $character->PV,
             ':PVMax' => $character->PVMax,
             ':force' => $character->force,
